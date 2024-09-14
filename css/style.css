@@ -26,6 +26,10 @@ main {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  z-index: 5;
+  background-image: url('../images/vector.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header {
@@ -33,16 +37,24 @@ main {
   align-items: center;
 }
 
+.vector {
+  position: absolute;
+  top: 35px;
+  z-index: 1;
+}
+
 .header h1{
   text-align: center;
   font-size: 50px;
   margin-bottom: 10px;
+  z-index: 2;
 }
 
 .header p {
   font-size: 20px;
   padding-right: 300px;
   padding-left: 300px;
+  z-index: 3;
 }
 
 .button button {
@@ -69,6 +81,7 @@ button:hover {
   width: 300px;
   height: 200px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .product{
@@ -82,12 +95,8 @@ button:hover {
   color: #fff;
 }
 
-.vote:hover{
-  color: red;
-}
-
 .vote {
-  color: #555;
+  color: #ff0000;
 }
 
 .badge-popular {
@@ -97,4 +106,18 @@ button:hover {
   border-radius: 5px;
   top: 260px;
   left: 300px;
+}
+
+.badge {
+  position: absolute;
+  background-color: yellowgreen;
+  padding: 3px 7px;
+  border-radius: 5px;
+  top: 260px;
+  left: 695px;
+}
+
+.product-info {
+  display: flexbox;
+  left: 500px;
 }
